@@ -30,7 +30,7 @@ const OverviewSection: FC = () => {
     },
   ];
   return (
-    <section className="bg-bg-100 h-[25.5rem] rounded-t-3xl lg:rounded-t-[8.5rem] pt-12">
+    <section className="bg-bg-100 rounded-t-3xl lg:rounded-t-[8.5rem] py-12">
       <div className="container">
         <motion.div>
           <Typography
