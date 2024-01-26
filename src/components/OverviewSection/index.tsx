@@ -47,7 +47,7 @@ const OverviewSection: FC = () => {
             variant="h4"
             className="text-2xl text-gray-500"
           >
-            OverView
+            🗞️ OverView
           </Typography>
         </motion.div>
         <Typography

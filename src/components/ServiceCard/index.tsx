@@ -33,7 +33,7 @@ const ServiceCard: FC<Props> = ({ idx, title, itemCards }) => {
         </Typography>
         <div className="bg-bg-100 rounded-[20px] py-3 px-4 flex flex-wrap">
           {itemCards?.map((item, index) => (
-            <ItemServiceCard key={index} title={item.title} logo={item?.logo} />
+            <ItemServiceCard key={index} title={item.title} logo={item.logo} />
           ))}
         </div>
       </motion.div>

@@ -14,6 +14,9 @@ const config: Config = {
         "conversion-disabled":
           "linear-gradient(92deg, #D3D3D3 0%, #E2E2E2 100%)",
       },
+      boxShadow: {
+        card: "1px 10px 15px -10px #211e35",
+      },
       colors: {
         gray: {
           100: "#DDE6ED",

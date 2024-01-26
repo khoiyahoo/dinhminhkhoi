@@ -39,12 +39,6 @@ import {
   vue,
   tailwindcss,
   facebook,
-  travelix,
-  accomadation,
-  furniture,
-  rapidsurvey,
-  ITEES,
-  Hrog,
   EazyMock,
   eazyrest,
   ladle,
@@ -341,159 +335,103 @@ const TOOL_SERVICE = [
 const PROJECTS = [
   {
     name: "Travelix",
+    icon: "🚌",
     description:
       "This is a website that helps users to book tours and reservations. The system has multi-language integration, online payment, and essential functions for the management department.",
     responsibility:
       "Undertake work related to the setup and deployment of the project Design project in figma, take on the front-end of the project and support the back-end",
-    tags: [
-      {
-        name: "mui hmtl reactstrap",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript nextjs",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "nodejs expressjs",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: travelix,
+    tags: [mui, sass, nextjs, typescript, nodejs],
     openSource: true,
     source_code_link: "https://github.com/khoiyahoo/travelix",
   },
-  {
-    name: "Accommodation",
-    description:
-      "Website helps users to find accommodation and reservations. Helps users post and manage accommodations.",
-    responsibility:
-      "Undertake work related to the setup and deployment of the project Design project in figma, take on the front-end of the project and  the back-end",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript reactjs",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "nodejs expressjs",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: accomadation,
-    openSource: true,
-    source_code_link: "https://github.com/khoiyahoo/accomadation-project",
-  },
-  {
-    name: "Furniture app",
-    description:
-      "This is a app that helps users to book, register, login, search, furniture. Take control and find your ideal match quickly and easily.",
-    responsibility:
-      "Undertake work related to the setup and deployment of the project Design project in figma, take on the front-end of the project and  the back-end",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "react native",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: furniture,
-    openSource: true,
-    source_code_link: "https://github.com/khoiyahoo/furniture-app",
-  },
+  // {
+  //   name: "Accommodation",
+  //   description:
+  //     "Website helps users to find accommodation and reservations. Helps users post and manage accommodations.",
+  //   responsibility:
+  //     "Undertake work related to the setup and deployment of the project Design project in figma, take on the front-end of the project and  the back-end",
+  //   tags: [
+  //     {
+  //       name: "html",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwindcss",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "javascript reactjs",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs expressjs",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: accomadation,
+  //   openSource: true,
+  //   source_code_link: "https://github.com/khoiyahoo/accomadation-project",
+  // },
+  // {
+  //   name: "Furniture app",
+  //   description:
+  //     "This is a app that helps users to book, register, login, search, furniture. Take control and find your ideal match quickly and easily.",
+  //   responsibility:
+  //     "Undertake work related to the setup and deployment of the project Design project in figma, take on the front-end of the project and  the back-end",
+  //   tags: [
+  //     {
+  //       name: "html",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "react native",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: furniture,
+  //   openSource: true,
+  //   source_code_link: "https://github.com/khoiyahoo/furniture-app",
+  // },
   {
     name: "Rapid survey",
+    icon: "💻",
     description:
       "A website that allows users to set up market surveys related to packaging reviews, advertising video reviews, brand tracking. ",
     responsibility:
       "Maintain existing features. Develop a new survey solution - ad video choice. Update UI/UX pack choice solution.",
-    tags: [
-      {
-        name: "mui html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript reactjs",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: rapidsurvey,
+    tags: [mui, sass, typescript, reactjs],
     openSource: false,
-    source_code_link: "https://resturant-sahil.vercel.app/",
+    source_code_link: "https://rapidsurvey.cimigo.com/",
   },
   {
     name: "ITE Education",
+    icon: "💻",
     description:
       "ITE is a principal provider of career and technical education and key developer of national occupational skills certification and standards to enhance workforce competitiveness",
     responsibility:
       "Maintain existing features in admin dashboard. Develop UI/UX and update ITEES Prodcut, Strategic plan module at Dashboard of Admin.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css bootstrap",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vuejs",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: ITEES,
+    tags: [html, bootstrap, vue],
     openSource: false,
-    source_code_link: "https://resturant-sahil.vercel.app/",
+    source_code_link: "https://www.ite.edu.sg/",
   },
   {
     name: "NowCast HrogWageNow",
+    icon: "💻",
     description:
       "Hrog is a Japanese company providing HR services. They have a service that helps customers look up data about employee salaries in different industries, helping to see what job boards are offering to people who are changing jobs within the salary range.",
     responsibility:
       "Build landing page, Recommend System Page, Privacy Policy Page, Inquiry Page, Release Schedule Page, Handle Logic for Pagination for page",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ladle",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: Hrog,
+    tags: [nextjs, typescript, tailwind, ladle],
     openSource: false,
-    source_code_link: "https://resturant-sahil.vercel.app/",
+    source_code_link: "https://hrogwagenow.com/",
   },
 ];
 
