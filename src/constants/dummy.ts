@@ -6,7 +6,6 @@ import {
   css,
   figma,
   git,
-  github,
   gmail,
   html,
   instagram,
@@ -42,6 +41,7 @@ import {
   EazyMock,
   eazyrest,
   ladle,
+  githubwhite,
 } from "@src/assets/images";
 
 export const navLinks = [
@@ -191,13 +191,13 @@ const EXPERIENCES = [
   },
 ];
 
-const socials = [
+const SOCIALS = [
   {
     image: linkedin,
     link: "https://www.linkedin.com/in/kh%C3%B4i-%C4%91inh/",
   },
   {
-    image: github,
+    image: githubwhite,
     link: "https://github.com/khoiyahoo",
   },
   {
@@ -440,7 +440,7 @@ export {
   technologies,
   EXPERIENCES,
   PROJECTS,
-  socials,
+  SOCIALS,
   LANGUAGES,
   FRONT_END,
   BACK_END,

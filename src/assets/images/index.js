@@ -66,7 +66,7 @@ import Hrog from "./Hrog.png";
 import EazyMock from "./IconEzMock.webp";
 import eazyrest from "./eazyrest.png";
 import ladle from "./ladle.svg";
-
+import githubwhite from "./githubwhite.png";
 export {
   logo,
   backend,
@@ -133,4 +133,5 @@ export {
   EazyMock,
   eazyrest,
   ladle,
+  githubwhite,
 };
