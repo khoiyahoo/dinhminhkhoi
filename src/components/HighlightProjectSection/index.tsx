@@ -8,14 +8,14 @@ import { type Projects } from "@src/interfaces/Projects";
 import { ProjectsService } from "@src/services/projects";
 const HighlightProjectSection: FC = () => {
   const [data, setData] = useState<Projects[]>([]);
-  const fetchDataSkills = () => {
+  const fetchDataProjects = () => {
     ProjectsService.getProjects()
       .then((res) => setData(res.data))
       .catch((e) => alert(e));
   };
 
   useEffect(() => {
-    fetchDataSkills();
+    fetchDataProjects();
   }, []);
   return (
     <section className="bg-bg-100 py-12">
