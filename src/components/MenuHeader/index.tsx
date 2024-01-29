@@ -1,13 +1,15 @@
 import { type FC } from "react";
-import { cn } from "@src/utils/common";
+import { cn, getPathName } from "@src/utils/common";
 import { ROUTE } from "@src/constants/common";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 interface Props {
   open: boolean;
 }
 
 const MenuHeaderMobile: FC<Props> = ({ open }) => {
+  const router = useRouter();
   const ROUTES = [
     {
       title: "Home",
@@ -42,7 +44,14 @@ const MenuHeaderMobile: FC<Props> = ({ open }) => {
         <ul className="flex items-center justify-center flex-col">
           {ROUTES.map((item, index) => (
             <Link key={index} href={item.route}>
-              <li className="px-3 py-1.5 rounded-md hover:bg-gray-300">
+              <li
+                className={cn(
+                  "px-3 py-1.5 rounded-md",
+                  getPathName(router.pathname).includes(getPathName(item.route))
+                    ? "bg-gray-500"
+                    : "hover:bg-gray-300",
+                )}
+              >
                 {item.title}
               </li>
             </Link>

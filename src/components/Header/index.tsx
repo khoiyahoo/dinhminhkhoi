@@ -7,6 +7,7 @@ import MenuHeader from "@src/components/MenuHeader";
 import Typography from "@src/components/Typography";
 import { useRouter } from "next/router";
 import HeaderPercentage from "@src/components/HeaderPercentage";
+import { cn, getPathName } from "@src/utils/common";
 
 const Header: FC = () => {
   const ROUTES = [
@@ -67,10 +68,19 @@ const Header: FC = () => {
               Khoi | Web Developer
             </Typography>
           </Link>
-          <ul className="hidden items-center sm:flex">
+          <ul className="hidden items-center sm:flex gap-2">
             {ROUTES.map((item, index) => (
               <Link key={index} href={item.route}>
-                <li className="px-3 py-1.5 rounded-md hover:bg-gray-300">
+                <li
+                  className={cn(
+                    "px-3 py-1.5 rounded-md",
+                    getPathName(router.pathname).includes(
+                      getPathName(item.route),
+                    )
+                      ? "bg-gray-500"
+                      : "hover:bg-gray-300",
+                  )}
+                >
                   {item.title}
                 </li>
               </Link>
