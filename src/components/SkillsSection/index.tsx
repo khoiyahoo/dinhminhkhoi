@@ -1,11 +1,11 @@
 import { useState, type FC, useEffect } from "react";
 import Typography from "../Typography";
 import { motion } from "framer-motion";
-import ServiceCard from "../ServiceCard";
-import { SkillsService } from "@src/services/skills";
+import ServiceCard from "@src/components/ServiceCard";
 import { type Skill } from "@src/interfaces/Skills";
+import { SkillsService } from "@src/services/skills";
 
-const OverviewSection: FC = () => {
+const SkillsSection: FC = () => {
   const [data, setData] = useState<Skill[]>([]);
   const fetchDataSkills = () => {
     SkillsService.getSkills()
@@ -16,7 +16,6 @@ const OverviewSection: FC = () => {
   useEffect(() => {
     fetchDataSkills();
   }, []);
-
   return (
     <section className="bg-bg-100 rounded-t-3xl xl:rounded-t-[8.5rem] pt-12">
       <div className="container">
@@ -27,7 +26,7 @@ const OverviewSection: FC = () => {
             variant="p"
             className="text-gray-500"
           >
-            Introduction
+            What I have done so far
           </Typography>
           <Typography
             size="normal"
@@ -35,22 +34,9 @@ const OverviewSection: FC = () => {
             variant="h4"
             className="text-2xl text-gray-500"
           >
-            🗞️ OverView
+            📔 Skills
           </Typography>
         </motion.div>
-        <Typography
-          size="normal"
-          type="bold"
-          variant="p"
-          className="mt-4 text-gray-500 text-justify"
-        >
-          🌱 I&apos;m a web developer skilled in Sass, Bootstrap, and Tailwind
-          for creating responsive UI. With expertise in TypeScript, React, React
-          Native, Figma Design and Redux Saga, I build scalable web apps that
-          deliver exceptional user experiences. I prioritize clean coding and
-          stay up-to-date with trends to exceed expectations. Let&apos;s work
-          together on your next project.
-        </Typography>
         <div className="mt-8 grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-4">
           {data.map((item, index) => (
             <ServiceCard
@@ -65,4 +51,4 @@ const OverviewSection: FC = () => {
     </section>
   );
 };
-export default OverviewSection;
+export default SkillsSection;

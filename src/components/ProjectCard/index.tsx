@@ -1,4 +1,3 @@
-import { type StaticImageData } from "next/image";
 import ItemServiceCard from "src/components/ItemServiceCard";
 import Typography from "@src/components/Typography";
 import { type FC } from "react";
@@ -13,7 +12,7 @@ interface Props {
   openSource: boolean;
   description: string;
   responsibility: string;
-  tags: StaticImageData[];
+  tags: string[];
 }
 const ProjectCard: FC<Props> = ({
   href = "/",

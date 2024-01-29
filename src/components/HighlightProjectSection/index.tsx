@@ -1,11 +1,22 @@
-import { type FC } from "react";
+import { useEffect, useState, type FC } from "react";
 import Typography from "../Typography";
 import { motion } from "framer-motion";
-import { PROJECTS } from "@src/constants/dummy";
 import ProjectCard from "@src/components/ProjectCard";
 import Link from "next/link";
 import { ROUTE } from "@src/constants/common";
+import { type Projects } from "@src/interfaces/Projects";
+import { ProjectsService } from "@src/services/projects";
 const HighlightProjectSection: FC = () => {
+  const [data, setData] = useState<Projects[]>([]);
+  const fetchDataSkills = () => {
+    ProjectsService.getProjects()
+      .then((res) => setData(res.data))
+      .catch((e) => alert(e));
+  };
+
+  useEffect(() => {
+    fetchDataSkills();
+  }, []);
   return (
     <section className="bg-bg-100 py-12">
       <div className="container">
@@ -38,15 +49,15 @@ const HighlightProjectSection: FC = () => {
           project at school and is evaluated.
         </Typography>
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 auto-rows-fr">
-          {PROJECTS.map((item, index) => (
+          {data.map((item, index) => (
             <ProjectCard
               key={index}
               openSource={item.openSource}
-              href={item.source_code_link}
+              href={item.link}
               icon={item.icon}
               title={item.name}
               description={item.description}
-              tags={item.tags}
+              tags={item.techs}
               responsibility={item.responsibility}
             />
           ))}

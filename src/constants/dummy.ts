@@ -131,7 +131,7 @@ const technologies = [
 const EXPERIENCES = [
   {
     title: "Web Developer",
-    company_name: "Teqnological Asisa",
+    companyName: "Teqnological Asisa",
     icon: codedrops,
     iconBg: "#383E56",
     date: "October 2023 - Current",
@@ -142,7 +142,7 @@ const EXPERIENCES = [
   },
   {
     title: "Web Developer",
-    company_name: "Freelance",
+    companyName: "Freelance",
     icon: codedrops,
     iconBg: "#383E56",
     date: "Jan 2023 - October 2023",
@@ -154,7 +154,7 @@ const EXPERIENCES = [
   },
   {
     title: "Frontend Developer",
-    company_name: "Pixelcent Company",
+    companyName: "Pixelcent Company",
     icon: codedrops,
     iconBg: "#383E56",
     date: "Sep 2022 - Jan 2023",
@@ -168,7 +168,7 @@ const EXPERIENCES = [
   },
   {
     title: "Frontend Developer Intern",
-    company_name: "Pixelcent Company",
+    companyName: "Pixelcent Company",
     icon: codedrops,
     iconBg: "#383E56",
     date: "Jun 2022 - Sep 2022",
@@ -181,7 +181,7 @@ const EXPERIENCES = [
   },
   {
     title: "Information of Technology",
-    company_name: "University of Technology and Education",
+    companyName: "University of Technology and Education",
     icon: codedrops,
     iconBg: "#383E56",
     date: "Sep 2019 - Sep 2023",

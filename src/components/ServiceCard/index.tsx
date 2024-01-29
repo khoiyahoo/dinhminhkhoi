@@ -1,18 +1,15 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { type FC, useRef } from "react";
-import { type StaticImageData } from "next/image";
 import ItemServiceCard from "src/components/ItemServiceCard";
 import { fadeIn } from "@src/utils/motion";
 import Typography from "../Typography";
+import { type Tech } from "@src/interfaces/Skills";
 
 interface Props {
   idx: number;
   title: string;
-  itemCards: {
-    title: string;
-    logo: StaticImageData;
-  }[];
+  itemCards: Tech[];
 }
 const ServiceCard: FC<Props> = ({ idx, title, itemCards }) => {
   const tiltRef = useRef(null); // Create a ref for Tilt component

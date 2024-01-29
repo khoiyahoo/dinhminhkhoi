@@ -1,4 +1,3 @@
-import { type StaticImageData } from "next/image";
 import { type FC } from "react";
 import Image from "next/image";
 import Typography from "@src/components/Typography";
@@ -6,7 +5,7 @@ import { cn } from "@src/utils/common";
 
 interface Props {
   title?: string;
-  logo: StaticImageData;
+  logo: string;
   className?: string;
   classNameImg?: string;
 }
@@ -20,14 +19,16 @@ const ItemServiceCard: FC<Props> = ({
   return (
     <div
       className={cn(
-        "badge border rounded-md py-1 px-2 flex justify-center items-center m-1",
+        "badge border rounded-md py-1 px-2 flex justify-center items-center m-1 shadow-lg",
         className,
       )}
     >
       <Image
         src={logo}
         alt="ảnh"
-        className={cn("w-[20px] h-[20px] mr-2", classNameImg)}
+        width={20}
+        height={20}
+        className={cn("mr-2", classNameImg)}
       />
       <Typography
         size="extraSmall"
