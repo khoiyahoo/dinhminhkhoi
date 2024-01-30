@@ -8,6 +8,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    baseUrl: process.env.NEXT_BASE_URL,
+  },
 };
 
 module.exports = nextConfig;

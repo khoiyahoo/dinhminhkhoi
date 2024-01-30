@@ -73,7 +73,7 @@ const HighlightProjectSection: FC = () => {
               variant="p"
               className="text-text-400"
             >
-              See more
+              See More Projects
             </Typography>
           </Link>
         </div>
