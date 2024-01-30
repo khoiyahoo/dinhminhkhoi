@@ -1,7 +1,7 @@
 import { type FC } from "react";
 import wave from "@src/assets/images/wave.png";
 import Image from "next/image";
-import Typography from "../Typography";
+import Typography from "@src/components/Typography";
 const Footer: FC = () => {
   return (
     <div>

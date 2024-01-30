@@ -98,7 +98,7 @@ const HeroHomeContainer: FC = () => {
             </Typography>
             <Link
               href={item.href}
-              className="hover:underline hover:underline-offset-4 hover:decoration-gray-100"
+              className="hover:underline hover:underline-offset-4 hover:decoration-gray-100 hover:italic"
             >
               <Typography
                 size="normal"

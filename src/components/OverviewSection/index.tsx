@@ -1,7 +1,7 @@
 import { useState, type FC, useEffect } from "react";
-import Typography from "../Typography";
+import Typography from "@src/components/Typography";
 import { motion } from "framer-motion";
-import ServiceCard from "../ServiceCard";
+import ServiceCard from "@src/components/ServiceCard";
 import { SkillsService } from "@src/services/skills";
 import { type Skill } from "@src/interfaces/Skills";
 

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { type FC, useRef } from "react";
 import ItemServiceCard from "src/components/ItemServiceCard";
 import { fadeIn } from "@src/utils/motion";
-import Typography from "../Typography";
+import Typography from "@src/components/Typography";
 import { type Tech } from "@src/interfaces/Skills";
 
 interface Props {

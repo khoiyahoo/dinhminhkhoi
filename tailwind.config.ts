@@ -13,6 +13,8 @@ const config: Config = {
         "conversion-02": "linear-gradient(92deg, #03AACE 0%, #49D8D8 100%)",
         "conversion-disabled":
           "linear-gradient(92deg, #D3D3D3 0%, #E2E2E2 100%)",
+        "conversion-transparent":
+          "linear-gradient(180deg, #DDE6ED 0%, rgba(217, 217, 217, 0.25) 100%)",
       },
       boxShadow: {
         card: "1px 10px 15px -10px #211e35",

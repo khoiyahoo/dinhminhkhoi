@@ -1,5 +1,5 @@
 import { useEffect, useState, type FC } from "react";
-import Typography from "../Typography";
+import Typography from "@src/components/Typography";
 import { motion } from "framer-motion";
 import ProjectCard from "@src/components/ProjectCard";
 import { type Projects } from "@src/interfaces/Projects";
