@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
+import cat404 from "@src/assets/images/cat404.json";
+import Lottie from "lottie-react";
 
 const Error = () => {
   return (
@@ -11,11 +13,16 @@ const Error = () => {
       <NextSeo title="Not found | Site of Khoi" />
       <section className="bg-bg-100 pt-[7.5rem] pb-[8.125rem]">
         <div className="container">
-          <h2 className="text-center text-[2.1875rem] leading-[2.93rem] mb-[3.75rem] text-[#0A0A0A]">
+          <h2 className="text-center text-[2.1875rem] leading-[2.93rem] mb-[1.75rem] text-[#0A0A0A]">
             We&apos;re sorry the page you requested
             <br />
             cannot be found.
           </h2>
+          <Lottie
+            animationData={cat404}
+            loop={true}
+            className="w-80 h-80 mx-auto"
+          />
 
           <div className="text-base text-[#333333] font-normal max-w-[40rem] mx-auto">
             <p>The following are possible reasons:</p>

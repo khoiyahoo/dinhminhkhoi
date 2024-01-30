@@ -1,6 +1,6 @@
 import { type FC } from "react";
 import Typography from "@src/components/Typography";
-import catHello from "@src/assets/images/cathello.json";
+import catHello from "@src/assets/images/catHello.json";
 import Lottie from "lottie-react";
 import Link from "next/link";
 
@@ -26,7 +26,7 @@ const HeroHomeContainer: FC = () => {
     <div className="flex justify-center items-center flex-col md:flex-row pb-12 gap-8">
       <div className="w-full md:w-1/2">
         <div className="flex items-center">
-          <Lottie animationData={catHello} loop={true} className="w-20 h-20" />
+          <Lottie animationData={catHello} loop={true} className="w-14 h-14" />
           <Typography
             size="normal"
             type="bold"
