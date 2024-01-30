@@ -49,7 +49,7 @@ const HighlightProjectSection: FC = () => {
           project at school and is evaluated.
         </Typography>
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 auto-rows-fr">
-          {data.map((item, index) => (
+          {data.slice(0, 4).map((item, index) => (
             <ProjectCard
               key={index}
               openSource={item.openSource}

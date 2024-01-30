@@ -46,9 +46,9 @@ const OverviewSection: FC = () => {
         >
           🌱 I&apos;m a web developer skilled in Sass, Bootstrap, and Tailwind
           for creating responsive UI. With expertise in TypeScript, React, React
-          Native, Figma Design and Redux Saga, I build scalable web apps that
-          deliver exceptional user experiences. I prioritize clean coding and
-          stay up-to-date with trends to exceed expectations. Let&apos;s work
+          Native, Figma Design and Redux, I build scalable web apps that deliver
+          exceptional user experiences. I prioritize clean coding and stay
+          up-to-date with trends to exceed expectations. Let&apos;s work
           together on your next project.
         </Typography>
         <div className="mt-8 grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-4">
