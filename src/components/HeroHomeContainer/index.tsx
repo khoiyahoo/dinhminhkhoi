@@ -32,7 +32,7 @@ const HeroHomeContainer: FC = () => {
         >
           🌱 👨🏻‍💻 I am a guy with a creative mind and like design. I would like to
           learn and discover something new every day. Currently work as a Web
-          developer.
+          developer.Besides, I like to eat 🍽️ and travel everywhere 🚌
         </Typography>
         <div className="mx-auto sm:mx-0 max-w-60 h-1 mt-4 bg-conversion-01 rounded-md"></div>
         <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start mt-6 md:mt-4">

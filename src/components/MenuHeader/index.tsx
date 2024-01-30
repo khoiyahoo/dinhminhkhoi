@@ -41,7 +41,7 @@ const MenuHeaderMobile: FC<Props> = ({ open }) => {
   return (
     <div className={cn(STYLE_MAPPING.MENU, open ? "right-0" : "right-[-100%]")}>
       <div className="flex flex-col items-center flex-1 py-3">
-        <ul className="flex items-center justify-center flex-col">
+        <ul className="flex items-center justify-center flex-col gap-4">
           {ROUTES.map((item, index) => (
             <Link key={index} href={item.route}>
               <li
