@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const HeroHomeContainer: FC = () => {
   return (
-    <div className="flex justify-center flex-col sm:flex-row pb-12">
+    <div className="flex justify-center flex-col sm:flex-row pb-12 gap-4">
       <div className="w-full sm:w-1/2">
         <div className="flex items-center">
           <Lottie animationData={hiHand} loop={true} className="w-14 h-14" />
@@ -47,7 +47,7 @@ const HeroHomeContainer: FC = () => {
           ))}
         </div>
       </div>
-      <div className="w-[14rem] h-80">
+      <div className="w-[14rem] h-80 mx-auto sm:mx-0">
         <Image src={logo} alt="anh logo" className="w-full h-full" />
       </div>
     </div>

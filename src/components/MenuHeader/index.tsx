@@ -3,6 +3,7 @@ import { cn, getPathName } from "@src/utils/common";
 import { ROUTE } from "@src/constants/common";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import HeaderPercentage from "@src/components/HeaderPercentage";
 
 interface Props {
   open: boolean;
@@ -58,6 +59,7 @@ const MenuHeaderMobile: FC<Props> = ({ open }) => {
           ))}
         </ul>
       </div>
+      <HeaderPercentage />
     </div>
   );
 };
