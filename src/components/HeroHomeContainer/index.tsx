@@ -1,14 +1,15 @@
 import { type FC } from "react";
 import Typography from "@src/components/Typography";
 import hiHand from "@src/assets/images/hiHand.json";
-import coding from "@src/assets/images/coding.json";
+import logo from "@src/assets/images/logo.png";
 import { SOCIALS } from "@src/constants/dummy";
 import ItemContact from "@src/components/ItemContact";
 import Lottie from "lottie-react";
+import Image from "next/image";
 
 const HeroHomeContainer: FC = () => {
   return (
-    <div className="flex justify-center flex-col sm:flex-row">
+    <div className="flex justify-center flex-col sm:flex-row pb-12">
       <div className="w-full sm:w-1/2">
         <div className="flex items-center">
           <Lottie animationData={hiHand} loop={true} className="w-14 h-14" />
@@ -46,11 +47,9 @@ const HeroHomeContainer: FC = () => {
           ))}
         </div>
       </div>
-      <Lottie
-        animationData={coding}
-        loop={true}
-        className="w-80 h-80 mx-auto sm:mx-0"
-      />
+      <div className="w-[14rem] h-80">
+        <Image src={logo} alt="anh logo" className="w-full h-full" />
+      </div>
     </div>
   );
 };

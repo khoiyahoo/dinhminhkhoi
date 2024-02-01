@@ -1,13 +1,13 @@
 import { ROUTE } from "@src/constants/common";
 import { useState, type FC, useEffect } from "react";
 import Link from "next/link";
-import coding from "@src/assets/images/coding.json";
-import Lottie from "lottie-react";
 import MenuHeader from "@src/components/MenuHeader";
 import Typography from "@src/components/Typography";
 import { useRouter } from "next/router";
 import HeaderPercentage from "@src/components/HeaderPercentage";
 import { cn, getPathName } from "@src/utils/common";
+import logo from "@src/assets/images/logo.png";
+import Image from "next/image";
 
 const Header: FC = () => {
   const ROUTES = [
@@ -62,8 +62,8 @@ const Header: FC = () => {
     <header className="fixed z-[9999] bg-gray-400 w-full font-mitr text-text-100">
       <div className="container">
         <div className="flex min-h-14 items-center justify-between sm:justify-start gap-8">
-          <Link href="/" className="flex items-center">
-            <Lottie animationData={coding} loop={true} className="w-10 h-10" />
+          <Link href="/" className="flex items-center gap-4">
+            <Image src={logo} alt="logo" width={24} height={32} />
             <Typography size="normal" type="bold" variant="p">
               Khoi | Web Developer
             </Typography>
