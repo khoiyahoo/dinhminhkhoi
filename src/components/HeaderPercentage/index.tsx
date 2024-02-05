@@ -1,7 +1,7 @@
 // ScrollPercentage.js
 import React, { useState, useEffect, type FC } from "react";
 
-const HeaaderPercentage: FC = () => {
+const HeaderPercentage: FC = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
 
   const handleScroll = () => {
@@ -32,4 +32,4 @@ const HeaaderPercentage: FC = () => {
   );
 };
 
-export default HeaaderPercentage;
+export default HeaderPercentage;
