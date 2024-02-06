@@ -58,6 +58,11 @@ const config: Config = {
             "background-position": "right center",
           },
         },
+        dash: {
+          to: {
+            "stroke-dashoffset": "0",
+          },
+        },
       },
     },
   },
